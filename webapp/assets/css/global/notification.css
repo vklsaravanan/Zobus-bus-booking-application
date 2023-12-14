@@ -1,0 +1,16 @@
+.notification {
+    position: fixed;
+    top: -60px; /* Initially above the viewport */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 16px;
+    background-color: #4CAF50; /* Default color */
+    color: #fff;
+    border-radius: 8px;
+    transition: top 0.5s ease-in-out;
+    z-index: 999;
+}
+
+.error {
+    background-color: #e74c3c; /* Red color for error */
+}
