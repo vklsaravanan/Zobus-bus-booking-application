@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * Servlet Filter implementation class JspPreventFilter
  */
-@WebFilter(urlPatterns = {"*.jsp", "/"})
+@WebFilter(urlPatterns = {"*.jsp", "/"}, filterName = "filter001JspPrevention")
 
 public class JspPreventFilter implements Filter {
        
@@ -47,7 +47,6 @@ public class JspPreventFilter implements Filter {
 	        }
         
 		// place your code here
-		System.out.println(httpRequest.getRequestURI()); 
 		
 		// pass the request along the filter chain
 		request.getRequestDispatcher("/view/errorPag404e.jsp").forward(request, response);

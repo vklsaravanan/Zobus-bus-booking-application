@@ -18,6 +18,7 @@ public class DatabaseConnectionManager {
         config.setUsername("root");
         config.setPassword("iamroot");
         config.setDriverClassName("com.mysql.cj.jdbc.Driver");
+        config.setMaximumPoolSize(20);
         
         dataSource = new HikariDataSource(config);
         

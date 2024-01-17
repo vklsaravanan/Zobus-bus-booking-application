@@ -10,15 +10,11 @@
 	<script type="text/javascript" src="assets/js/basePageSupporter.js"></script>
 </head>
 <body>
-<jsp:include page="components/header/header.jsp"/>
-<p>Search bus</p>
 
-	<form action="<%=request.getContextPath()%>/search" method="get">
-		<input type="text">
-		<input type="text">
-		<input type="date">
-		<button type="submit">search</button>
-	</form>
+	<jsp:include page="components/header/header.jsp"/>
+	<p>Search bus</p>
+	<jsp:include page="components/busSearchTools.jsp"/>
 	
+
 </body>
-weq</html>  
+</html>  
